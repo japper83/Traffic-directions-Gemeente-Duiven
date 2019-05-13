@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<header>
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+  <meta http-equiv="refresh" content="300" >
+</header>
+<div align="center">
+<h1>Verkeer richting Zevenaar</h1>
+
+{% if distance == 5572 %}
+<h1>Sla links af</h1>
+<img src="/static/arrow-left.png" alt="pijl links">
+{% else: %}
+<h1>Sla rechts af</h1>
+<img src="/static/arrow-right.png" alt="pijl rechts">
+{% endif %}
+</div>
+</body>
+</html>
