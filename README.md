@@ -26,7 +26,9 @@ Change the Google Maps API value in the main.py file.
 token = 'EbYhtflimzMpWEiNNRcfKbJubwpyNQwOXgQGZBA'
 ```
 
-### Running the script
+### Running the site
 ```
 FLASK_APP=main.py flask run --host 0.0.0.0
 ```
+
+The site is now available on port 5000
