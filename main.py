@@ -3,7 +3,6 @@ import requests
 import sys
 import datetime
 from flask import render_template, Flask
-import random
 
 app = Flask(__name__)
 
