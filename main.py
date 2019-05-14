@@ -6,8 +6,6 @@ from flask import render_template, Flask
 
 app = Flask(__name__)
 
- 
-now = datetime.datetime.now()
 #Declarations
 token = '' #Enter your Google API Token'
 start = '51.966455, 5.995351'
@@ -18,6 +16,7 @@ client = googlemaps.Client(key=token)
 
 @app.route("/")
 def index():
+     now = datetime.datetime.now()
      directions = client.distance_matrix(start,end, departure_time=now)
      distance = directions["rows"][0]["elements"][0]["distance"]["value"]
      return render_template('index.html', distance=distance)
